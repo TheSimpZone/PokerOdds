@@ -1,6 +1,4 @@
 import numpy as np
-import operator as op
-import time
 
 def getCombinations(deck, numToDraw, numInDeck):
     if numToDraw == 0:
@@ -45,7 +43,7 @@ def addCardsToCombinations(combinations, hand, table):
         c = insertToComb(c, hand[1])
         #print(c)
         for card in table:
-           c = insertToComb(c, card)
+            c = insertToComb(c, card)
         #print(c)
         combinations[i] = c
     return combinations

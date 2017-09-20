@@ -1,9 +1,7 @@
-import os
 from VideoCapture import Device
-import PIL
 from PIL import Image
 prefix = 'card'
-increasing = 9
+increasing = 0
 mainimagename = prefix + str(increasing) +'.jpg'
 inde = input()
 while inde != 'q':
